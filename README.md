@@ -22,6 +22,33 @@ The current workflow includes 3 nodes:
 
 ---
 
+
+
+
+## 📊 Workflow Architecture
+
+```
+               ┌────────────────────────┐
+               │       Input Text        │
+               └─────────────┬──────────┘
+                             ↓
+                    split_text (Node 1)
+                             ↓
+                 summarize_chunks (Node 2)
+                             ↓
+                  merge_summaries (Node 3)
+                             ↓
+                    check_length (Branch)
+                    ┌─────────┴─────────┐
+                    │                   │
+                 shorten              done
+                    │                   │
+                    └──────→ split_text │
+                                        ↓
+                         final_output (Result)
+```
+
+
 ## ▶️ How to Run
 
 Install dependencies:
