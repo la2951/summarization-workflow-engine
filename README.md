@@ -76,6 +76,22 @@ You will get back:
   "final_summary": "Shortened summary of the text"
 }
 
+---
+
+## 📸 Screenshots
+
+### 1️⃣ Running the FastAPI Server
+![Server](screenshots/server_running.png)
+
+### 2️⃣ Swagger UI (API Documentation)
+![Swagger](screenshots/swagger_ui.png)
+
+### 3️⃣ Example Summary Output (POST /run-workflow)
+![API Response](screenshots/summary_output.png)
+
+---
+
+
 
 🚀 What I Would Improve With More Time
 
